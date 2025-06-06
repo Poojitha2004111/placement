@@ -1,0 +1,25 @@
+// File: ShapeArea.java
+class Shape {
+
+    // Area of circle: π * r^2
+    public double area(double radius) {
+        return Math.PI * radius * radius;
+    }
+
+    // Area of rectangle: length * breadth
+    public double area(double length, double breadth) {
+        return length * breadth;
+    }
+}
+
+public class ShapeArea {
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+
+        double circleArea = shape.area(5);  // radius = 5
+        double rectangleArea = shape.area(4, 6);  // length = 4, breadth = 6
+
+        System.out.println("Area of Circle: " + circleArea);
+        System.out.println("Area of Rectangle: " + rectangleArea);
+    }
+}
